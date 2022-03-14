@@ -2,6 +2,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutterlib/source_util.dart';
 
 class WYCarNumberPicker {
 
@@ -183,7 +184,7 @@ class WYCarNumberState extends State<WYCarNumberView> {
            child: Container(
              color: Colors.transparent,
              child: Row(children: [
-               Image.asset( isNew ? "assets/btn_xz_pre@2x.png" : "assets/btn_xz_nor@2x.png",width: 20,height: 20,),
+               Image.asset( SourceUtil.getPath(isNew ? "assets/btn_xz_pre@2x.png" : "assets/btn_xz_nor@2x.png"),width: 20,height: 20,),
                SizedBox(width: 7,),
                Text("新能源车",style: TextStyle(color: Color(0xFF01D28E),fontSize: 15),),
                SizedBox(width: 12,),
@@ -593,7 +594,7 @@ class WYCarNumberInputBackState extends State<WYCarNumberInputBackBtn> {
           border: Border.all(color: Color(0xFFD5D5D5),width: 0.5),
         ),
         alignment: Alignment.center,
-        child: Image.asset("assets/icon_back@2x.png",width: 22.5,height: 16,),
+        child: Image.asset(SourceUtil.getPath("assets/icon_back@2x.png"),width: 22.5,height: 16,),
 
       ),
     );

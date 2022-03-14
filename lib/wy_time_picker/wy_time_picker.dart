@@ -3,6 +3,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutterlib/source_util.dart';
 
 class WYTimePicker  {
   // ignore: non_constant_identifier_names
@@ -575,7 +576,6 @@ class WYDateSelectState extends State<WYDateSelectView> {
         day1 = "0" + day1;
       }
       if(list.length == 1) {
-      ///assets/ico_hyxq_arrived@2x.png
         return Row(crossAxisAlignment: CrossAxisAlignment.center,children: [
           Spacer(),
           Text(year + "-" + month + "-" + day1,style: TextStyle(fontSize:16,color: Color(0xFFAAAAAA) ),),
@@ -591,7 +591,7 @@ class WYDateSelectState extends State<WYDateSelectView> {
           Spacer(),
           Text(year + "-" + month + "-" + day1,style: TextStyle(fontSize:16,color: Color(0xFFAAAAAA) ),),
           SizedBox(width: 28,),
-          Image.asset("assets/ico_hyxq_arrived@2x.png",height: 20,width: 20,),
+          Image.asset(SourceUtil.getPath("assets/ico_hyxq_arrived@2x.png"),height: 20,width: 20,),
           SizedBox(width: 28,),
           Text(year + "-" + month + "-" + day2,style: TextStyle(fontSize:16,color: Color(0xFFAAAAAA) ),),
           Spacer(),
@@ -836,7 +836,6 @@ class WYCalendarSelectState extends State<WYDateSelectView> {
         day1 = "0" + day1;
       }
       if(list.length == 1) {
-        ///assets/ico_hyxq_arrived@2x.png
         return Row(crossAxisAlignment: CrossAxisAlignment.center,children: [
           Spacer(),
           Text(year + "-" + month + "-" + day1,style: TextStyle(fontSize:16,color: Color(0xFFAAAAAA) ),),
@@ -860,7 +859,7 @@ class WYCalendarSelectState extends State<WYDateSelectView> {
           Spacer(),
           Text(year + "-" + month + "-" + day1,style: TextStyle(fontSize:16,color: Color(0xFFAAAAAA) ),),
           SizedBox(width: 28,),
-          Image.asset("assets/ico_hyxq_arrived@2x.png",height: 20,width: 20,),
+          Image.asset(SourceUtil.getPath("assets/ico_hyxq_arrived@2x.png"),height: 20,width: 20,),
           SizedBox(width: 28,),
           Text(year2 + "-" + month2 + "-" + day2,style: TextStyle(fontSize:16,color: Color(0xFFAAAAAA) ),),
           Spacer(),
